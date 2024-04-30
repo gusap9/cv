@@ -70,7 +70,7 @@ export const SecondColumn = ({ strings }) => {
               >
                 To-Do List &nbsp;
                 <span className="container__bold-upper-subname">
-                  | React Native
+                  | React
                 </span>
               </a>
             </span>
