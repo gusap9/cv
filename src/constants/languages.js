@@ -17,7 +17,7 @@ export const RUS_STRINGS = {
   workExperienceTitle: 'Опыт работы:',
   workFirstName: 'Junior Frontend Developer',
   workFirstPlace: 'Aston, Санкт-Петербург',
-  workFirstTime: 'август 2024 - апрель 2024',
+  workFirstTime: 'август 2023 - апрель 2024',
   workSecName: 'Junior Frontend Developer',
   workSecPlace: 'RSSchool',
   workSecTime: 'сентябрь 2022 - декабрь 2022',
