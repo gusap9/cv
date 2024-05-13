@@ -212,24 +212,6 @@ export const SecondColumn = ({ strings }) => {
         <div className='container__courses-text container__work-text'>
           <div className='container__education-inner'>
             <div className='container__bold-upper-name'>
-              React + JS &nbsp;
-              <span className='container__bold-upper-subname'>| Aston</span>
-            </div>
-            <div className='container__period'>
-              ({strings.coursesFourthTime})
-            </div>
-          </div>
-          <div className='container__education-inner'>
-            <div className='container__bold-upper-name'>
-              React &nbsp;
-              <span className='container__bold-upper-subname'>| RSschool</span>
-            </div>
-            <div className='container__period'>
-              ({strings.coursesThirdTime})
-            </div>
-          </div>
-          <div className='container__education-inner'>
-            <div className='container__bold-upper-name'>
               JavaScript/Front-End &nbsp;
               <span className='container__bold-upper-subname'>| RSschool</span>
             </div>
