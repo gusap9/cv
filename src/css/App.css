@@ -121,6 +121,7 @@ li::marker {
 }
 
 .container__bold-upper-subname {
+  font-weight: bold;
   color: rgba(0, 0, 0, 0.535);
   display: contents;
 }
