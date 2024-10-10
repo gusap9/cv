@@ -1,23 +1,23 @@
 import { useState } from 'react';
 import {
-  ENG_STRINGS,
-  GER_STRINGS,
-  RUS_STRINGS,
-} from '../../constants/languages';
+  ENG_DICTIONARY,
+  GER_DICTIONARY,
+  RUS_DICTIONARY,
+} from '../../constants/dictionary';
 
 export const Header = ({ setString }) => {
   const [activeLang, setActiveLang] = useState('russian');
   const changeLangOnRus = () => {
-    setString(RUS_STRINGS);
+    setString(RUS_DICTIONARY);
     setActiveLang('russian');
   };
 
   const changeLangOnGer = () => {
-    setString(GER_STRINGS);
+    setString(GER_DICTIONARY);
     setActiveLang('german');
   };
   const changeLangOnEng = () => {
-    setString(ENG_STRINGS);
+    setString(ENG_DICTIONARY);
     setActiveLang("english")
   };
   return (

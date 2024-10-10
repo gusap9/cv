@@ -62,7 +62,9 @@ li::marker {
   row-gap: 30px;
 }
 
-.photo__main {}
+.photo__main {
+  height: fit-content;
+}
 
 .photo__main-img {
   max-width: 100%;

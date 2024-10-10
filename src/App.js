@@ -3,13 +3,13 @@ import './css/App.css';
 import './css/fonts.css';
 
 import React, { useState } from 'react';
-import { RUS_STRINGS } from './constants/languages';
+import { RUS_DICTIONARY } from './constants/dictionary';
 import { Header } from './components/Header';
 import { FirstColumn } from './components/FirstColumn';
 import { SecondColumn } from './components/SecondColumn';
 
 function App() {
-  const [strings, setString] = useState(RUS_STRINGS);
+  const [strings, setString] = useState(RUS_DICTIONARY);
   return (
     <div className="body">
       <Header setString={setString} />

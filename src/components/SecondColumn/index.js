@@ -139,51 +139,21 @@ export const SecondColumn = ({ strings }) => {
 			</div>
 			<div className="container__work">
 				<div className="container__work-title container__title">
-					{strings.workExperienceTitle}
+					{strings.workTitle}
 				</div>
 				<div className="container__work-text">
-					<div className="container__work-inner">
-						<div className="container__bold-upper-name">
-							{strings.workFirstName} &nbsp;
-							<span className="container__bold-upper-subname">
-								| React, TypeScript, Redux, RTK, SCSS
-							</span>
+					{strings.workItems.map((el, index) => (
+						<div key={index} className="container__work-inner">
+							<div className="container__bold-upper-name">
+								{el.name} &nbsp;
+								<span className="container__bold-upper-subname">
+									{el.stack && `| ${el.stack}`}
+								</span>
+							</div>
+							<div className="container__bold-upper-subname">{el.place}</div>
+							<div className="container__period">({el.range})</div>
 						</div>
-						<div className="container__bold-upper-subname">
-							{strings.workFirstPlace}
-						</div>
-						<div className="container__period">({strings.workFirstTime})</div>
-					</div>
-					<div className="container__work-inner">
-						<div className="container__bold-upper-name">
-							{strings.workSecName} &nbsp;
-							<span className="container__bold-upper-subname">
-								| Vue, JavaScript, CSS
-							</span>
-						</div>
-						<div className="container__bold-upper-subname">
-							{strings.workSecPlace}
-						</div>
-						<div className="container__period">({strings.workSecTime})</div>
-					</div>
-					<div className="container__work-inner">
-						<div className="container__bold-upper-name">
-							{strings.workThirdName} &nbsp;
-							<span className="container__bold-upper-subname">
-								| {strings.workThirdPlace}
-							</span>
-						</div>
-						<div className="container__period">({strings.workThirdTime})</div>
-					</div>
-					<div className="container__work-inner">
-						<div className="container__bold-upper-name">
-							{strings.workFourthName} &nbsp;
-							<span className="container__bold-upper-subname">
-								| {strings.workFourthPlace}
-							</span>
-						</div>
-						<div className="container__period">({strings.workFourthTime})</div>
-					</div>
+					))}
 				</div>
 			</div>
 			<div className="container__education">
@@ -191,24 +161,17 @@ export const SecondColumn = ({ strings }) => {
 					{strings.educationTitle}
 				</div>
 				<div className="container__education-text container__work-text">
-					<div className="container__education-inner">
-						<div className="container__bold-upper-name">
-							{strings.educationFirstName} &nbsp;
-							<span className="container__bold-upper-subname">
-								| {strings.educationFirstPlace}
-							</span>
+					{strings.educationItems.map((el, index) => (
+						<div key={index} className="container__education-inner">
+							<div className="container__bold-upper-name">
+								{el.name} &nbsp;
+								<span className="container__bold-upper-subname">
+									{el.place && `| ${el.place}`}
+								</span>
+							</div>
+							<div className="container__period">{el.range}</div>
 						</div>
-						<div className="container__period">(2017 – 2021)</div>
-					</div>
-					<div className="container__education-inner">
-						<div className="container__bold-upper-name">
-							{strings.educationSecName} &nbsp;
-							<span className="container__bold-upper-subname">
-								| {strings.educationSecPlace}
-							</span>
-						</div>
-						<div className="container__period">(2017 – 2021)</div>
-					</div>
+					))}
 				</div>
 			</div>
 			<div className="container__courses">
@@ -216,22 +179,17 @@ export const SecondColumn = ({ strings }) => {
 					{strings.coursesTitle}
 				</div>
 				<div className="container__courses-text container__work-text">
-					<div className="container__education-inner">
-						<div className="container__bold-upper-name">
-							JavaScript/Front-End &nbsp;
-							<span className="container__bold-upper-subname">| RSschool</span>
+					{strings.coursesItems.map((el, index) => (
+						<div key={index} className="container__education-inner">
+							<div className="container__bold-upper-name">
+								{el.name} &nbsp;
+								<span className="container__bold-upper-subname">
+									{el.place && `| ${el.place}`}
+								</span>
+							</div>
+							<div className="container__period">({el.range})</div>
 						</div>
-						<div className="container__period">({strings.coursesSecTime})</div>
-					</div>
-					<div className="container__education-inner">
-						<div className="container__bold-upper-name">
-							JavaScript/Front-End Pre-School &nbsp;
-							<span className="container__bold-upper-subname">| RSschool</span>
-						</div>
-						<div className="container__period">
-							({strings.coursesFirstTime})
-						</div>
-					</div>
+					))}
 				</div>
 			</div>
 		</section>
