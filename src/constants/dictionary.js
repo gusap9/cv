@@ -6,6 +6,7 @@ export const RUS_DICTIONARY = {
 		'JavaScript',
 		'HTML5',
 		'CSS3',
+		'Telegram Mini App',
 		'Swift',
 		'Немецкий язык – C1 (продвинутый)',
 		'Английский язык – B1 (средний)',
@@ -28,8 +29,8 @@ export const RUS_DICTIONARY = {
 		{
 			name: 'Frontend Developer',
 			place: 'Невасофт, Санкт-Петербург',
-			range: 'июнь 2024 - сейчас',
-			stack: 'React, TypeScript, Effector, SCSS, RTK',
+			range: 'май 2024 - сейчас',
+			stack: 'React, TypeScript, Effector, SCSS, RTK, Telegram Mini App',
 		},
 		{
 			name: 'Frontend Developer',
@@ -115,7 +116,7 @@ export const GER_DICTIONARY = {
 		{
 			name: 'Frontend Developer',
 			place: 'Nevasoft, Sankt Petersburg',
-			range: 'Juni 2024 - now',
+			range: 'Mai 2024 - now',
 			stack: 'React, TypeScript, Effector, SCSS, RTK',
 		},
 		{
@@ -202,7 +203,7 @@ export const ENG_DICTIONARY = {
 		{
 			name: 'Frontend Developer',
 			place: 'Nevasoft, St. Petersburg',
-			range: 'june 2024 - now',
+			range: 'may 2024 - now',
 			stack: 'React, TypeScript, Effector, SCSS, RTK',
 		},
 		{
